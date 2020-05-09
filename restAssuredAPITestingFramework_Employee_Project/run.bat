@@ -1,0 +1,2 @@
+cd C:\Users\Prakash\practiceWorkspace\restAssuredAPITestingFramework_Employee_Project
+mvn clean install

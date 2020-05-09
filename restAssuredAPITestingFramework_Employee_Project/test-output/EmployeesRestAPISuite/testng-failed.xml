@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [EmployeesRestAPISuite]">
+  <listeners>
+    <listener class-name="com.employeeAPI.utilities.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="Employee Rest API Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.employeeAPI.testCases.TC005_Delete_Employee_Record">
+        <methods>
+          <include name="setUp"/>
+          <include name="createEmployee"/>
+          <include name="checkStatusLine"/>
+          <include name="checkContentType"/>
+          <include name="checkStatusCode"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.employeeAPI.testCases.TC005_Delete_Employee_Record -->
+    </classes>
+  </test> <!-- Employee Rest API Test(failed) -->
+</suite> <!-- Failed suite [EmployeesRestAPISuite] -->
